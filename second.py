@@ -15,7 +15,10 @@ plt.ylabel("Weight (pounds)")
 plt.title("Scatter Plot: Height vs. Weight")
 plt.show()
 
-# Linear Regression
+# Linear regression
+X = data[["Height"]]
+y = data["Weight"]
+
 model = LinearRegression()
 model.fit(X, y)
 y_pred = model.predict(X)
